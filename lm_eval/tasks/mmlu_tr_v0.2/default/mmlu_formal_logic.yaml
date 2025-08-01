@@ -1,0 +1,7 @@
+"dataset_name": "formal_logic"
+"description": "Aşağıda, formal mantık hakkında çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_humanities_v0.2"
+"group_alias": "humanities_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_formal_logic_v0.2"
+"task_alias": "formal_logic_v0.2"

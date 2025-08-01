@@ -1,0 +1,7 @@
+"dataset_name": "security_studies"
+"description": "Aşağıda, güvenlik çalışmaları ile ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_social_sciences_v0.2"
+"group_alias": "social_sciences_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_security_studies_v0.2"
+"task_alias": "security_studies_v0.2"

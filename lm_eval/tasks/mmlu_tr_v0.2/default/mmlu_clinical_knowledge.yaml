@@ -1,0 +1,7 @@
+"dataset_name": "clinical_knowledge"
+"description": "Aşağıda klinik bilgi hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_clinical_knowledge_v0.2"
+"task_alias": "clinical_knowledge_v0.2"

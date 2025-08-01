@@ -1,0 +1,7 @@
+"dataset_name": "college_medicine"
+"description": "Aşağıda üniversite tıbbı hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_college_medicine_v0.2"
+"task_alias": "college_medicine_v0.2"

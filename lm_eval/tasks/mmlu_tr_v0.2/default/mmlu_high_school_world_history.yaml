@@ -1,0 +1,7 @@
+"dataset_name": "high_school_world_history"
+"description": "Aşağıda, lise dünya tarihine dair çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_humanities_v0.2"
+"group_alias": "humanities_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_high_school_world_history_v0.2"
+"task_alias": "high_school_world_history_v0.2"

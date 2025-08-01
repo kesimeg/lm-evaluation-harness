@@ -1,0 +1,7 @@
+"dataset_name": "college_computer_science"
+"description": "Aşağıda üniversite bilgisayar bilimleri hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_college_computer_science_v0.2"
+"task_alias": "college_computer_science_v0.2"

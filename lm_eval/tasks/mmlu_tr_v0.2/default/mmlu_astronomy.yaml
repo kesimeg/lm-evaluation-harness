@@ -1,0 +1,7 @@
+"dataset_name": "astronomy"
+"description": "Aşağıda astronomiyi konu alan çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_astronomy"
+"task_alias": "astronomy"

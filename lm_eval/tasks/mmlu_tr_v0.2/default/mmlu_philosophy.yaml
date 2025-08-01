@@ -1,0 +1,7 @@
+"dataset_name": "philosophy"
+"description": "Aşağıda, felsefe ile ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_humanities_v0.2"
+"group_alias": "humanities_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_philosophy_v0.2"
+"task_alias": "philosophy_v0.2"

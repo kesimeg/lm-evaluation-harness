@@ -1,0 +1,7 @@
+"dataset_name": "virology"
+"description": "Aşağıda viroloji hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_virology_v0.2"
+"task_alias": "virology_v0.2"

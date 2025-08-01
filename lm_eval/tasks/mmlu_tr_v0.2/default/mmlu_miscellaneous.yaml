@@ -1,0 +1,7 @@
+"dataset_name": "miscellaneous"
+"description": "Aşağıda, çeşitli konularla ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_miscellaneous_v0.2"
+"task_alias": "miscellaneous_v0.2"

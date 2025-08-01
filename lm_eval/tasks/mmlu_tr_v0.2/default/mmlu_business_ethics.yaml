@@ -1,0 +1,7 @@
+"dataset_name": "business_ethics"
+"description": "Aşağıda iş etiği hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_business_ethics_v0.2"
+"task_alias": "business_ethics_v0.2"

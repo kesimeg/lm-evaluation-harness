@@ -1,0 +1,6 @@
+group: mmlu_tr_v0.2
+task:
+  - mmlu_stem_v0.2
+  - mmlu_other_v0.2
+  - mmlu_social_sciences_v0.2
+  - mmlu_humanities_v0.2

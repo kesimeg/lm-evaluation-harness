@@ -1,0 +1,7 @@
+"dataset_name": "nutrition"
+"description": "Aşağıda, beslenme ile ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_nutrition_v0.2"
+"task_alias": "nutrition_v0.2"

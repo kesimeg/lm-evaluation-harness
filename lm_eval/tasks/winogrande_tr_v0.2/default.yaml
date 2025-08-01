@@ -1,0 +1,15 @@
+task: winogrande_tr
+dataset_path: malhajar/winogrande-tr
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+num_fewshot: 5
+doc_to_text: !function preprocess_winogrande.doc_to_text
+doc_to_target: !function preprocess_winogrande.doc_to_target
+doc_to_choice: !function preprocess_winogrande.doc_to_choice
+should_decontaminate: true
+doc_to_decontamination_query: sentence
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true

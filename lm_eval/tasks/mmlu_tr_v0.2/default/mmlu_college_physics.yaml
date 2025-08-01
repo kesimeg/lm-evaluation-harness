@@ -1,0 +1,7 @@
+"dataset_name": "college_physics"
+"description": "Aşağıda üniversite fizik hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_college_physics_v0.2"
+"task_alias": "college_physics_v0.2"

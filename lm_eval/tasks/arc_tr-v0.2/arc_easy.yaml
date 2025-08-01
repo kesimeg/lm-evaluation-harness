@@ -1,0 +1,22 @@
+group:
+  - ai2_arc
+task: arc_tr-v0.2
+dataset_path: malhajar/arc-tr-v0.2
+output_type: multiple_choice
+test_split: test
+fewshot_split: test
+num_fewshot: 25
+doc_to_text: "Soru: {{question}}\nCevap:"
+doc_to_target: "{{choices.label.index(answerKey)}}"
+doc_to_choice: "{{choices.text}}"
+should_decontaminate: true
+doc_to_decontamination_query: "Soru: {{question}}\nCevap:"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

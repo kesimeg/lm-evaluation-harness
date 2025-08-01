@@ -1,0 +1,7 @@
+"dataset_name": "econometrics"
+"description": "Aşağıda, ekonometri hakkında çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_social_sciences_v0.2"
+"group_alias": "social_sciences_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_econometrics_v0.2"
+"task_alias": "econometrics_v0.2"

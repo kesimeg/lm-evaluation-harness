@@ -1,0 +1,7 @@
+"dataset_name": "electrical_engineering"
+"description": "Aşağıda, elektrik mühendisliği hakkında çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_electrical_engineering_v0.2"
+"task_alias": "electrical_engineering_v0.2"

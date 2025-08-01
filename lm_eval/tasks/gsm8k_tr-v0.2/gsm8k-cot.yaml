@@ -1,0 +1,60 @@
+group:
+  - chain_of_thought
+task: gsm8k_cot_tr
+dataset_path: malhajar/gsm8k-tr
+dataset_name: main
+output_type: generate_until
+test_split: test
+doc_to_text: "\
+Q: Bahçede 15 ağaç var. Bahçe işçileri bugün bahçeye ağaç dikecekler. İşleri bittikten sonra bahçede 21 ağaç olacak. Bahçe işçileri bugün kaç ağaç dikti?\n\
+A: Başlangıçta 15 ağaç vardı. Daha sonra 21 ağaç oldu. O halde 21 - 15 = 6 olmalı. Cevap 6.\n\n\
+Q: Otoparkta 3 araba var ve 2 araba daha geldiğinde, otoparkta kaç araba olur?\n\
+A: Başlangıçta 3 araba var. 2 araba daha geldi. 3 + 2 = 5. Cevap 5.\n\n\
+Q: Leah'ın 32 çikolatası vardı ve kız kardeşinin 42 tane. 35 tanesini yediklerinde, toplamda kaç tane çikolataları kalmıştır?\n\
+A: Başlangıçta, Leah'ın 32 çikolatası vardı. Kız kardeşi 42 tane vardı. Toplamda 32 + 42 = 74 yapar. 35 tanesini yedikten sonra 74 - 35 = 39 çikolataları kalmış. Cevap 39.\n\n\
+Q: Jason'un 20 lolipopu vardı. Denny'ye birkaç lolipop verdi. Şimdi Jason'un 12 lolipopu var. Jason Denny'ye kaç lolipop vermiştir?\n\
+A: Jason 20 lolipople başladı. Denny'ye bazılarını verdikten sonra 12 lolipopu kaldı. O halde Denny'ye 20 - 12 = 8 tane vermiş. Cevap 8.\n\n\
+Q: Shawn'un beş oyuncakları vardı. Noel'de annesi ve babasından ikişer oyuncak aldı. Şimdi Shawn'un kaç oyuncakları var?\n\
+A: Shawn 5 oyuncakla başladı. Annesinden ve babasından 2'şer oyuncak aldıysa, bu 4 oyuncak daha demektir. 5 + 4 = 9. Cevap 9.\n\n\
+Q: Sunucu odasında dokuz bilgisayar vardı. Pazartesiden perşembeye kadar her gün beşer bilgisayar kuruldu. Şimdi sunucu odasında kaç bilgisayar var?\n\
+A: Başlangıçta 9 bilgisayar vardı. 4 gün boyunca her gün 5 bilgisayar eklendi. Yani 5 * 4 = 20 bilgisayar eklendi. 9 + 20 = 29. Cevap 29.\n\n\
+Q: Michael 58 golf topuna sahipti. Salı günü 23 golf topunu kaybetti. Çarşamba günü 2 tane daha kaybetti. Çarşamba gününün sonunda kaç golf topu kalmıştır?\n\
+A: Michael 58 golf topuyla başladı. Salı günü 23'ünü kaybettikten sonra 58 - 23 = 35'i kaldı. 2 tane daha kaybettikten sonra 35 - 2 = 33 golf topu kaldı. Cevap 33.\n\n\
+Q: Olivia'nın 23 doları var. 3'er dolara beş bagel aldı. Ne kadar parası kaldı?\n\
+A: Olivia'nın 23 doları vardı. 3 dolarlık beş bagel 5 x 3 = 15 dolar olur. Yani 23 - 15 doları kaldı. 23 - 15 = 8. Cevap 8.\n\n\
+Q: {{question}}\nA:"
+doc_to_target: "{{answer.split('####')[-1].strip()}}"
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: false
+    regexes_to_ignore:
+      - ","
+      - "\\$"
+      - "(?s).*#### "
+      - "\\.$"
+generation_kwargs:
+  until:
+    - "Q:"
+    - "</s>"
+    - "<|im_end|>"
+  do_sample: false
+repeats: 1
+num_fewshot: 0
+filter_list:
+  - name: "strict-match"
+    filter:
+      - function: "regex"
+        regex_pattern: "The answer is (\\-?[0-9\\.\\,]+)."
+      - function: "take_first"
+  - name: "flexible-extract"
+    filter:
+      - function: "regex"
+        group_select: -1
+        regex_pattern: "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+      - function: "take_first"
+metadata:
+  version: 3.0
+  num_fewshot: 8

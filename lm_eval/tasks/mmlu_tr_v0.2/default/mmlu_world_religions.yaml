@@ -1,0 +1,7 @@
+"dataset_name": "world_religions"
+"description": Aşağıda dünya dinleri hakkında çoktan seçmeli sorular (cevaplarıyla birlikte) bulunmaktadır."
+"group": "mmlu_humanities_v0.2"
+"group_alias": "humanities_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_world_religions_v0.2"
+"task_alias": "world_religions_v0.2"

@@ -1,0 +1,7 @@
+"dataset_name": "machine_learning"
+"description": "Aşağıda, makine öğrenimiyle ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_machine_learning_v0.2"
+"task_alias": "machine_learning_v0.2"

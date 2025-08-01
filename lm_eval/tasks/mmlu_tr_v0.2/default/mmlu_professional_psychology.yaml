@@ -1,0 +1,7 @@
+"dataset_name": "professional_psychology"
+"description": "Aşağıda, mesleki psikoloji ile ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_social_sciences_v0.2"
+"group_alias": "social_sciences_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_professional_psychology_v0.2"
+"task_alias": "professional_psychology_v0.2"

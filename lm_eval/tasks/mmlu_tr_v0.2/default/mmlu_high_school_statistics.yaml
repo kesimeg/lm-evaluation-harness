@@ -1,0 +1,7 @@
+"dataset_name": "high_school_statistics"
+"description": "Aşağıda, lise istatistik hakkında çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_stem_v0.2"
+"group_alias": "stem_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_high_school_statistics_v0.2"
+"task_alias": "high_school_statistics_v0.2"

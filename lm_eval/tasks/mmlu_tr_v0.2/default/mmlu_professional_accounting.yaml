@@ -1,0 +1,7 @@
+"dataset_name": "professional_accounting"
+"description": "Aşağıda, mesleki muhasebe ile ilgili çoktan seçmeli soruların (cevaplarıyla birlikte) olduğu bir liste bulunmaktadır."
+"group": "mmlu_other_v0.2"
+"group_alias": "other_v0.2"
+"include": "_default_template_yaml"
+"task": "mmlu_professional_accounting_v0.2"
+"task_alias": "professional_accounting_v0.2"
