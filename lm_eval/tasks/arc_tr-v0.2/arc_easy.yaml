@@ -1,5 +1,4 @@
-group:
-  - ai2_arc
+tag: ai2_arc
 task: arc_tr-v0.2
 dataset_path: malhajar/arc-tr-v0.2
 output_type: multiple_choice
@@ -20,3 +19,4 @@ metric_list:
     higher_is_better: true
 metadata:
   version: 1.0
+
