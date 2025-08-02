@@ -1,4 +1,4 @@
-group:
+tag:
   - math_word_problems
 task: gsm8k_tr-v0.2
 dataset_path: malhajar/gsm8k_tr-v0.2
@@ -39,3 +39,4 @@ filter_list:
         group_select: -1
         regex_pattern: "(-?[$0-9.,]{2,})|(-?[0-9]+)"
       - function: "take_first"
+

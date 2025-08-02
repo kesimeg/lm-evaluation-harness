@@ -1,4 +1,4 @@
-group:
+tag:
   - multiple_choice
 task: hellaswag_tr-v0.2
 dataset_path: malhajar/hellaswag_tr-v0.2
@@ -19,3 +19,4 @@ metric_list:
   - metric: acc_norm
     aggregation: mean
     higher_is_better: true
+
